@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <defs>
+    <linearGradient id="rent-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="#0f172a" rx="12"/>
+  <rect width="400" height="200" fill="url(#rent-bg)" rx="12"/>
+  <!-- Calculator body -->
+  <rect x="145" y="30" width="110" height="140" rx="10" fill="#1e293b" stroke="#22d3ee" stroke-width="2"/>
+  <!-- Screen -->
+  <rect x="155" y="40" width="90" height="30" rx="5" fill="#0f172a"/>
+  <text x="235" y="62" text-anchor="end" fill="#22d3ee" font-family="monospace" font-size="16">$1,250</text>
+  <!-- Buttons -->
+  <g>
+    <rect x="158" y="80" width="25" height="20" rx="4" fill="#334155"/><text x="170" y="94" text-anchor="middle" fill="#94a3b8" font-size="10">7</text>
+    <rect x="188" y="80" width="25" height="20" rx="4" fill="#334155"/><text x="200" y="94" text-anchor="middle" fill="#94a3b8" font-size="10">8</text>
+    <rect x="218" y="80" width="25" height="20" rx="4" fill="#334155"/><text x="230" y="94" text-anchor="middle" fill="#94a3b8" font-size="10">9</text>
+    <rect x="158" y="105" width="25" height="20" rx="4" fill="#334155"/><text x="170" y="119" text-anchor="middle" fill="#94a3b8" font-size="10">4</text>
+    <rect x="188" y="105" width="25" height="20" rx="4" fill="#334155"/><text x="200" y="119" text-anchor="middle" fill="#94a3b8" font-size="10">5</text>
+    <rect x="218" y="105" width="25" height="20" rx="4" fill="#334155"/><text x="230" y="119" text-anchor="middle" fill="#94a3b8" font-size="10">6</text>
+    <rect x="158" y="130" width="55" height="20" rx="4" fill="#06b6d4"/><text x="185" y="144" text-anchor="middle" fill="white" font-size="10" font-weight="bold">CALC</text>
+    <rect x="218" y="130" width="25" height="20" rx="4" fill="#334155"/><text x="230" y="144" text-anchor="middle" fill="#94a3b8" font-size="10">C</text>
+  </g>
+  <!-- Dollar signs -->
+  <text x="80" y="80" fill="#22d3ee" font-size="30" opacity="0.15">$</text>
+  <text x="310" y="120" fill="#22d3ee" font-size="40" opacity="0.1">$</text>
+  <text x="200" y="190" text-anchor="middle" fill="#67e8f9" font-family="Arial" font-size="11" font-weight="bold" opacity="0.6">Python + HTML + CSS</text>
+</svg>

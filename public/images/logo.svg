@@ -1,0 +1,30 @@
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="metalGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4f8;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#b8d4e0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#808080;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#b8d4e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8f4f8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Glow effect background -->
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="120" font-weight="bold" text-anchor="middle" fill="#00d4ff" opacity="0.3" filter="url(#glow)">PRAKASH</text>
+  
+  <!-- Glow effect warmth -->
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="120" font-weight="bold" text-anchor="middle" fill="#ffaa00" opacity="0.2" filter="url(#glow)">PRAKASH</text>
+  
+  <!-- Main metallic text -->
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="120" font-weight="bold" text-anchor="middle" fill="url(#metalGradient)" stroke="#666" stroke-width="1">PRAKASH</text>
+  
+  <!-- Highlight -->
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="120" font-weight="bold" text-anchor="middle" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.4">PRAKASH</text>
+</svg>
