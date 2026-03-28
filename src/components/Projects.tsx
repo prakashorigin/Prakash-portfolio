@@ -72,6 +72,28 @@ export default function Projects() {
             >
               {/* Project image */}
               <div className="relative h-48 overflow-hidden bg-gradient-to-br from-purple-900/40 to-cyan-900/40 flex items-center justify-center">
+                {/* Featured badge */}
+                {project.featured && (
+                  <div className="absolute top-3 right-3 z-10 px-3 py-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-xs font-bold text-white">
+                    🌟 Featured
+                  </div>
+                )}
+
+                {/* Difficulty badge */}
+                {project.difficulty && (
+                  <div
+                    className={`absolute top-3 left-3 z-10 px-3 py-1 rounded-full text-xs font-semibold text-white ${
+                      project.difficulty === "Beginner"
+                        ? "bg-green-500/20 text-green-300 border border-green-500/50"
+                        : project.difficulty === "Intermediate"
+                          ? "bg-yellow-500/20 text-yellow-300 border border-yellow-500/50"
+                          : "bg-red-500/20 text-red-300 border border-red-500/50"
+                    }`}
+                  >
+                    {project.difficulty}
+                  </div>
+                )}
+
                 <div className="text-6xl opacity-30 group-hover:opacity-50 transition-opacity group-hover:scale-110 duration-500">
                   {project.category === "fullstack"
                     ? "🚀"
@@ -110,9 +132,16 @@ export default function Projects() {
 
               {/* Project info */}
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-purple-300 transition-colors">
-                  {project.title}
-                </h3>
+                <div className="flex items-start justify-between gap-2 mb-2">
+                  <h3 className="text-xl font-semibold text-white group-hover:text-purple-300 transition-colors flex-1">
+                    {project.title}
+                  </h3>
+                  {project.date && (
+                    <span className="text-xs text-gray-500 whitespace-nowrap">
+                      {project.date}
+                    </span>
+                  )}
+                </div>
                 <p className="text-sm text-gray-400 mb-4 line-clamp-2">
                   {project.description}
                 </p>

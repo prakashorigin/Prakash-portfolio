@@ -3,6 +3,8 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import TechStackTimeline from "@/components/TechStackTimeline";
+import Testimonials from "@/components/Testimonials";
 import Blog from "@/components/Blog";
 import GitHubSection from "@/components/GitHubSection";
 import Contact from "@/components/Contact";
@@ -18,8 +20,10 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
-      <GitHubSection />
+      <TechStackTimeline />
+      <Testimonials />
       <Blog />
+      <GitHubSection />
       <Contact />
       <Footer />
     </main>

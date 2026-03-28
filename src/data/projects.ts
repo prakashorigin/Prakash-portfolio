@@ -7,6 +7,9 @@ export interface Project {
   github: string;
   live: string;
   category: "fullstack" | "frontend" | "backend" | "game";
+  featured?: boolean;
+  date?: string;
+  difficulty?: "Beginner" | "Intermediate" | "Advanced";
 }
 
 export const projects: Project[] = [
@@ -14,89 +17,109 @@ export const projects: Project[] = [
     id: 1,
     title: "CrazySnake Game",
     description:
-      "Advanced Snake Game with 4 difficulty levels, 6 unlockable skins, power-ups, particle effects, responsive canvas, and mobile swipe controls. Includes Express backend with persistent leaderboards.",
+      "Advanced Snake Game featuring 4 difficulty levels (Easy to Extreme), 6 unlockable skins, power-ups, particle effects, responsive canvas, and mobile swipe controls. Includes Express backend with persistent web leaderboards, real-time score tracking, and engaging gameplay mechanics.",
     image: "/projects/snake-game.svg",
     tags: ["React", "Node.js", "Express", "Canvas"],
     github: "https://github.com/prakashorigin/CrazySnake-Game",
-    live: "#",
+    live: "https://crazysnake.vercel.app",
     category: "fullstack",
+    featured: true,
+    date: "2025-06",
+    difficulty: "Advanced",
   },
   {
     id: 2,
     title: "Video Intelligence System",
     description:
-      "AI-powered video analysis system using Python and computer vision for real-time object detection, tracking, and intelligent video processing.",
+      "AI-powered video analysis system leveraging Python and computer vision for real-time object detection, multi-object tracking, and intelligent video processing. Supports multiple video formats with edge detection and behavioral analysis capabilities.",
     image: "/projects/video-intelligence.svg",
     tags: ["Python", "OpenCV", "AI", "Machine Learning"],
     github: "https://github.com/prakashorigin/Video-Intelligence-System",
-    live: "#",
+    live: "https://github.com/prakashorigin/Video-Intelligence-System#demo",
     category: "backend",
+    featured: true,
+    date: "2025-05",
+    difficulty: "Advanced",
   },
   {
     id: 3,
     title: "Car Racing Game",
     description:
-      "Fast-paced car racing game built with vanilla JavaScript and HTML5 Canvas featuring smooth controls, obstacles, and increasing difficulty.",
+      "Fast-paced car racing game built with vanilla JavaScript and HTML5 Canvas. Features smooth keyboard controls, procedurally generated obstacles, increasing difficulty levels, collision detection, and smooth animations for engaging gameplay.",
     image: "/projects/car-racing.svg",
     tags: ["JavaScript", "HTML5 Canvas", "CSS", "Game Dev"],
     github: "https://github.com/prakashorigin/Car-Racing-Game",
-    live: "#",
+    live: "https://car-racing-game.vercel.app",
     category: "game",
+    date: "2025-04",
+    difficulty: "Intermediate",
   },
   {
     id: 4,
     title: "Tic Tac Toe",
     description:
-      "Classic Tic Tac Toe game with Python backend and clean HTML/CSS frontend. Features player vs player mode with win detection logic.",
+      "Classic Tic Tac Toe game with Python Flask backend and responsive HTML/CSS frontend. Features player vs player mode, AI opponent with minimax algorithm, win detection logic, game history tracking, and clean UI for seamless gameplay.",
     image: "/projects/tic-tac-toe.svg",
-    tags: ["Python", "HTML", "CSS", "Game Logic"],
+    tags: ["Python", "Flask", "HTML", "CSS"],
     github: "https://github.com/prakashorigin/tic-tac-toe",
-    live: "#",
+    live: "https://tictactoe-prakash.vercel.app",
     category: "game",
+    date: "2025-03",
+    difficulty: "Beginner",
   },
   {
     id: 5,
     title: "Rock Paper Scissor",
     description:
-      "Interactive Rock Paper Scissors game built with Python featuring AI opponent, score tracking, and clean game logic.",
+      "Interactive Rock Paper Scissors game built with Python featuring intelligent AI opponent using probability analysis, real-time score tracking, game statistics, and clean command-line interface with session history.",
     image: "/projects/rock-paper-scissor.svg",
     tags: ["Python", "Game Logic", "CLI"],
     github: "https://github.com/prakashorigin/rock-paper-scissor",
-    live: "#",
+    live: "https://github.com/prakashorigin/rock-paper-scissor",
     category: "game",
+    date: "2025-02",
+    difficulty: "Beginner",
   },
   {
     id: 6,
     title: "Rent Calculator",
     description:
-      "Simple and practical rent calculator application with Python backend and web interface for quick rent splitting and expense calculations.",
+      "Practical rent calculator application with Python backend and responsive web interface. Enables quick rent splitting among roommates, expense tracking, detailed breakdowns, payment reminders, and financial summary reports.",
     image: "/projects/rent-calculator.svg",
-    tags: ["Python", "HTML", "CSS", "Calculator"],
+    tags: ["Python", "Flask", "HTML", "CSS"],
     github: "https://github.com/prakashorigin/rent-calculator",
-    live: "#",
+    live: "https://rent-calculator-prakash.vercel.app",
     category: "frontend",
+    date: "2025-01",
+    difficulty: "Beginner",
   },
   {
     id: 7,
     title: "Portfolio Website",
     description:
-      "Modern developer portfolio built with Next.js, Tailwind CSS, and Framer Motion featuring dark mode, animations, and particle effects.",
+      "Modern, responsive developer portfolio built with Next.js 16, Tailwind CSS, and Framer Motion animations. Features dark mode toggle, particle background effects, smooth scrolling, project filtering, contact form integration, and optimized SEO.",
     image: "/projects/portfolio-site.svg",
     tags: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
-    github: "https://github.com/prakashorigin",
-    live: "#",
+    github: "https://github.com/prakashorigin/portfolio-website",
+    live: "https://prakash-portfolio.vercel.app",
     category: "frontend",
+    featured: true,
+    date: "2025-07",
+    difficulty: "Intermediate",
   },
   {
     id: 8,
-    title: "E-Commerce App",
+    title: "E-Commerce Platform",
     description:
-      "Full-stack e-commerce application with product catalog, shopping cart, user authentication, and payment integration.",
+      "Full-stack e-commerce application with comprehensive product catalog, shopping cart management, secure JWT authentication, payment integration (Stripe), order tracking, admin dashboard, and review system.",
     image: "/projects/ecommerce-app.svg",
-    tags: ["React", "Node.js", "MongoDB", "Express"],
-    github: "https://github.com/prakashorigin",
-    live: "#",
+    tags: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
+    github: "https://github.com/prakashorigin/ecommerce-app",
+    live: "https://ecommerce-prakash.vercel.app",
     category: "fullstack",
+    featured: true,
+    date: "2025-08",
+    difficulty: "Advanced",
   },
 ];
 
