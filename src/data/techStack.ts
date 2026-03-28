@@ -39,12 +39,4 @@ export const techStackTimeline: TechStackItem[] = [
       "Mastered deployment and CI/CD pipelines. Deployed applications on Vercel, Docker containers, and cloud platforms with monitoring.",
     technologies: ["Vercel", "Docker", "GitHub Actions", "Cloud Deployment", "DevOps"],
   },
-  {
-    id: 5,
-    year: "2026",
-    title: "Modern Architecture",
-    description:
-      "Implementing advanced patterns like microservices, scalable architecture, and real-time systems using modern tech stacks.",
-    technologies: ["Microservices", "WebSockets", "Redis", "GraphQL", "Advanced Architecture"],
-  },
 ];
