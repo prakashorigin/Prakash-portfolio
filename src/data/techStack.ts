@@ -31,12 +31,4 @@ export const techStackTimeline: TechStackItem[] = [
       "Explored machine learning and computer vision. Developed intelligent systems for video analysis and object detection using Python.",
     technologies: ["Python", "OpenCV", "TensorFlow", "Machine Learning", "AI"],
   },
-  {
-    id: 4,
-    year: "2025-2026",
-    title: "DevOps & Deployment",
-    description:
-      "Mastered deployment and CI/CD pipelines. Deployed applications on Vercel, Docker containers, and cloud platforms with monitoring.",
-    technologies: ["Vercel", "Docker", "GitHub Actions", "Cloud Deployment", "DevOps"],
-  },
 ];
