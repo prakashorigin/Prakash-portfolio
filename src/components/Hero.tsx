@@ -82,7 +82,7 @@ export default function Hero() {
             >
               Hi, I&apos;m <span className="gradient-text">Prakash</span>
               <br />
-              <span className="text-3xl md:text-5xl lg:text-6xl text-gray-400">
+              <span className="text-3xl md:text-5xl lg:text-6xl text-white">
                 Sharma
               </span>
             </motion.h1>
