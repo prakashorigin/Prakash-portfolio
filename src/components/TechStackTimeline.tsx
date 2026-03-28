@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { techStackTimeline } from "@/data/techStack";
+import { techStackTimeline, type TechStackItem } from "@/data/techStack";
 
 export default function TechStackTimeline() {
   const ref = useRef(null);
@@ -39,7 +39,7 @@ export default function TechStackTimeline() {
 
           {/* Timeline items */}
           <div className="space-y-12">
-            {techStackTimeline.map((item, index) => (
+            {techStackTimeline.map((item: TechStackItem, index: number) => (
               <motion.div
                 key={item.id}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
@@ -68,7 +68,7 @@ export default function TechStackTimeline() {
 
                       {/* Technologies */}
                       <div className="flex flex-wrap gap-2">
-                        {item.technologies.map((tech) => (
+                        {item.technologies.map((tech: string) => (
                           <span
                             key={tech}
                             className="px-3 py-1 text-xs font-medium text-cyan-400 bg-cyan-500/20 rounded-full border border-cyan-500/30"

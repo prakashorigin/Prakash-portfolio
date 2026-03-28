@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 import { testimonials } from "@/data/testimonials";
 import { FaStar } from "react-icons/fa";
 
@@ -58,9 +59,11 @@ export default function Testimonials() {
 
                 {/* Author */}
                 <div className="flex items-center gap-4 pt-4 border-t border-gray-700/50">
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={testimonial.name}
+                    width={48}
+                    height={48}
                     className="w-12 h-12 rounded-full object-cover"
                   />
                   <div>
